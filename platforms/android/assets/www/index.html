@@ -1,0 +1,96 @@
+﻿<!DOCTYPE html>
+<!--
+    Licensed to the Apache Software Foundation (ASF) under one
+    or more contributor license agreements.  See the NOTICE file
+    distributed with this work for additional information
+    regarding copyright ownership.  The ASF licenses this file
+    to you under the Apache License, Version 2.0 (the
+    "License"); you may not use this file except in compliance
+    with the License.  You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing,
+    software distributed under the License is distributed on an
+    "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+     KIND, either express or implied.  See the License for the
+    specific language governing permissions and limitations
+    under the License.
+-->
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://jackenchar.azurewebsites.net; style-src 'self'; media-src *">
+        <meta name="format-detection" content="telephone=no" />
+        <meta name="viewport" content="width=device-width, user-scalable=no" />
+        <link rel="stylesheet" type="text/css" href="css/rps.css" />
+        <title>Rock, paper, scissors game: jackenchar</title>
+    </head>
+<body>
+    <div id="wrapper">
+
+        <header id="header">
+            <h1>Let's Play Rock, Paper, Scissors!</h1>
+        </header>
+
+        <div id="middle">
+
+            <div id="players">
+
+                <div id="first-player">
+                    <p>You</p>
+                    <img id="first-player-img" src="../www/img/rpsl.gif" width="130" height="130" alt="Your choice" />
+                </div><!-- #first-player -->
+
+                <div id="current-scores">
+                    <p>versus</p>
+                    <br />
+                    <br />
+                    <p>Score</p>
+
+                    <span id="first-player-score">0</span>
+                    <span class="semicolon">:</span>
+                    <span id="second-player-score">0</span>
+
+
+                </div><!-- #current-scores -->
+
+                <div id="second-player">
+                    <p>Computer</p>
+                    <img id="second-player-img" src="../www/img/rpsr.gif" width="130" height="130" alt="Computer choice" />
+                </div><!-- #second-player -->
+
+            </div><!-- #players -->
+
+            <div id="results" class="resultctn">
+                <br />
+                <p id="show-result"></p>
+            </div>
+
+            <div id="make-choice">
+                <img src="../www/img/rock.jpg" id="rock" alt="Choose Rock" />
+                <img src="../www/img/paper.jpg" id="paper" alt="Choose Paper" />
+                <img src="../www/img/scissorsr.jpg" id="scissors" alt="Choose scissors" />
+            </div><!-- class="make-choice-item" #make-choice -->
+
+            <div>
+                <br />
+                <input id="new-game" type="button" value="New Game" />
+            </div>
+
+            <div id="game-counter-wrapper">
+                <p>Highest Score: <span id="game-counter">0</span></p>
+            </div><!-- #game-counter-wrapper -->
+
+        </div><!-- #middle -->
+
+    </div><!-- #wrapper -->
+    <footer>
+        <ul id='errorlog'></ul>
+    </footer>
+    <script type="text/javascript" src="js/rps.js"></script>
+    <script type="text/javascript" src="cordova.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+    <script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+</body>
+</html>

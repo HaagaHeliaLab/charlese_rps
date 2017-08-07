@@ -1,0 +1,280 @@
+/*************************************************
+	CSS RESET
+*************************************************/
+
+body, div, p,
+header, footer,
+hgroup, h1, h2 {
+	padding: 0;
+	margin: 0;
+}
+
+/*************************************************
+	CLEAR FLOATS
+*************************************************/
+
+#header:after,
+#players:after,
+#make-choice:after {
+	clear: both;
+	content: "";
+	display: block;
+	height: 0;
+}
+
+/*************************************************
+	ROOT ELEMENTS
+*************************************************/
+
+body {
+	background: #691a99; /*#ffc1c9*/
+	color: #400000;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+}
+
+#wrapper {
+	margin: 10px auto;
+    
+	width: 90%;
+}
+
+
+
+
+/*************************************************
+	HEADER 
+*************************************************/
+
+header {
+	padding: 8px;
+}
+
+header h1 {
+	font-family: "Times New Roman", Times, serif;
+	font-size: 15px;
+    text-align: center;
+    color:aliceblue;
+}
+
+/*************************************************
+	MIDDLE
+*************************************************/
+
+#middle {
+	margin: 10px 0 0 0;
+}
+
+#players {
+    margin: 0 auto;
+    max-width: 600px;
+}
+
+#first-player,
+#second-player {
+	border: 1px solid #68efad;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	width: 30% /*150px*/;
+    text-align: center;
+}
+
+#first-player {
+	float: left;
+    padding: 2px;
+}
+
+#second-player {
+	float: right;
+    padding: 2px;
+}
+
+#first-player p,
+#second-player p {
+	font-size: 12px;
+	font-weight: bold;
+	padding-bottom: 2px;
+	text-align: center;
+    color:aliceblue;
+}
+
+#first-player img,
+#second-player img {
+	/*display: block;*/
+	margin: 0;
+    max-width: 100%;
+}
+
+#current-scores {
+    float:left;
+    margin: 0 auto;
+	text-align: center;
+    color:aliceblue;
+    width:30%;
+
+}
+
+#first-player-score,
+#second-player-score {
+	font-family: "Times New Roman", Times, serif;
+	font-size: 30px;  
+}
+
+#current-scores .semicolon {
+	font-family: "Times New Roman", Times, serif;
+	font-size: 30px;	
+}
+
+#current-scores p:first-child {
+	display:block;
+    text-transform: uppercase;
+}
+
+#results {
+    margin: 0 auto;
+    max-width: 600px;
+}
+
+#show-result {
+	background: #9b26af;
+	border: 1px solid #68efad;
+
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 5px;
+	
+	font-size: 15px;
+	margin: 0 auto;
+	padding: 5px;
+	text-align: center;
+
+	width: 200px;
+	height: 15px;
+}
+
+div #make-choice {
+    display:block;
+    margin-top:10px;
+    margin-left:20px;
+    margin-right:auto;
+	max-width: 100%;
+    max-height:50%;
+    text-align: center;
+}
+
+#make-choice img {
+	max-width: 30%;
+}
+
+#make-choice img:hover {
+	border: solid #68efad;
+	cursor: pointer;
+}
+
+.make-choice-item {
+	border: solid transparent;
+	
+	-webkit-border-radius: 0px;
+	-moz-border-radius: 0px;
+	border-radius: 0px;
+	max-width: 40% /*152px*/;
+    max-height:20%;
+}
+
+
+#make-choice .make-choice-item:hover {
+	border: solid #68efad;
+    width: 50%;
+	cursor: pointer;
+}
+
+#make-choice .make-choice-item:last-child{
+	margin-right: 5px;
+}
+
+#new-game {
+	background: #008975;/*#68EFAD;*/
+	border: 2px outset #008975;
+	
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 5px;	
+	
+	color:aliceblue;
+	display: block;
+	font-size: 12px;
+	margin: 0 auto;
+	padding: 5px;
+	text-shadow: 1px 1px #691a99;
+	text-transform: uppercase;
+	max-width: 100% /*230px*/;
+}
+
+#new-game:hover {
+	background: #00473c;
+	cursor: pointer;
+}
+
+#game-counter-wrapper {
+	margin: 10px 0 0 0;
+}
+
+#game-counter-wrapper p {
+	text-align: center;
+    color:aliceblue;
+}
+
+#game-counter {
+	font-weight: bold;
+}
+
+/*************************************************
+	FOOTER
+*************************************************/
+
+#footer {
+	color: #000;
+	font-size: 11px;
+
+	margin-top: 20px;
+}
+
+#footer p {
+	text-align: center;
+}
+
+
+/*************************************************
+	SCREEN RESPONSIVE
+*************************************************/
+
+
+@media only screen and (max-width : 940px),
+only screen and (max-device-width : 940px){
+}
+
+@media only screen and (max-width : 720px),
+only screen and (max-device-width : 720px){
+    #wrapper {
+    list-style:none;
+    margin:0 auto;
+    margin-left:60px;}
+}
+
+@media only screen and (max-width : 530px),
+only screen and (max-device-width : 530px){
+     #wrapper  {
+    list-style:none;
+    margin:0 auto;
+    margin-left:0px;}
+}
+ 
+@media only screen and (max-width : 320px),
+only screen and (max-device-width : 320px){
+
+    #wrapper {
+    list-style:none;
+    margin:0 auto;
+    margin-left:0px;}
+}

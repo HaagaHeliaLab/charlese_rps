@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="C:\Users\char\Desktop\Haaga Helia\Cross Platform Development\jackenchar_Cordova\jackenchar\platforms\android\libs\sqlite-connector.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="76169ab23a4f939925491c6fe186749da5a56ee9">
+        <dex dex="C:\Users\char\Desktop\Haaga Helia\Cross Platform Development\jackenchar_Cordova\jackenchar\platforms\android\build\intermediates\pre-dexed\debug\sqlite-connector-2e903286f06fd73c18557e39e1f1835a7957f1a5.jar" />
+    </item>
+    <item
+        jar="C:\Users\char\Desktop\Haaga Helia\Cross Platform Development\jackenchar_Cordova\jackenchar\platforms\android\build\intermediates\exploded-aar\android\CordovaLib\unspecified\debug\classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="27629e8f3449b4da290763cfe9b06cc77a556cca">
+        <dex dex="C:\Users\char\Desktop\Haaga Helia\Cross Platform Development\jackenchar_Cordova\jackenchar\platforms\android\build\intermediates\pre-dexed\debug\classes-f8ac594efcf54d1f089dbd1fbf0d0dc53fd3817c.jar" />
+    </item>
+
+</items>
