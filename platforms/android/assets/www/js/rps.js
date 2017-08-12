@@ -37,15 +37,19 @@
     function onDeviceReady() {
         // Create a connection reference to our Azure Mobile Apps backend and updates the highest score
         client = new WindowsAzure.MobileServiceClient('https://jackenchar.azurewebsites.net');
-        if (useOfflineSync) {
-            initializeStore().then(setup);
-        } else {
-            setup();
-        }
 
-        scoreTable = client.getTable(tableName);
-        refreshDisplay();
-        syncBackend();
+        client.login('facebook').then(function () {
+        
+            if (useOfflineSync) {
+            initializeStore().then(setup);
+            } else {
+                setup();
+            }
+
+            scoreTable = client.getTable(tableName);
+            refreshDisplay();
+            syncBackend();
+        }, handleError);
     }
 
 
